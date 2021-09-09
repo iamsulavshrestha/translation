@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-sm-6">
+      <form #translator="ngForm" (ngSubmit)="send()">
+
+        <textarea id="textSend" name="text" placeholder="Text input in English" matInput minlength="5" rows="10"
+                  required (ngModelChange)="send()" [(ngModel)]="googleObj.text"></textarea>
+        <div class="d-flex justify-content-between">
+
+        </div>
+      </form>
+    </div>
+    <div class="col-sm-6">
+      <label for="english" class="font-weight-bold">Result:</label>
+      <p>{{result}}</p>
+    </div>
+  </div>
+</div>
