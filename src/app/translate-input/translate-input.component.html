@@ -1,0 +1,15 @@
+<form [formGroup]="form">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+           aria-describedby="basic-addon2"
+           (keyup.Space)="translate(form.get('textarea'))"
+           (blur)="translate(form.get('textarea'))"
+           formControlName="textarea">
+
+    <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username"
+           aria-describedby="basic-addon2"
+           (keyup.Space)="translate(form.get('textarea1'))"
+           (blur)="translate(form.get('textarea1'))"
+           formControlName="textarea1">
+  </div>
+</form>

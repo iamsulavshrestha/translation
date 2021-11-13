@@ -6,11 +6,13 @@ import {AppComponent} from './app.component';
 import {TranslationComponent} from './translation/translation.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import { TranslateInputComponent } from './translate-input/translate-input.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TranslationComponent
+    TranslationComponent,
+    TranslateInputComponent
   ],
   imports: [
     BrowserModule,
